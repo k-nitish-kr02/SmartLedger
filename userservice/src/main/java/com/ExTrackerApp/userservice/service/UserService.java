@@ -42,7 +42,8 @@ public class UserService
 
     public UserInfoDto getUser(UserInfoDto userInfoDto) throws Exception{
         Optional<UserInfo> userInfoDtoOpt = userRepository.findByUserId(userInfoDto.getUserId());
-        if(userInfoDtoOpt.isEmpty()){
+
+        if(userInfoDtoOpt.isEmpty() ){
             throw new Exception("User not found");
         }
         UserInfo userInfo = userInfoDtoOpt.get();
