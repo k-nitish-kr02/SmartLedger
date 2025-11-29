@@ -1,5 +1,6 @@
 # Use Amazon Corretto 21 with platform specification
-FROM --platform=linux/amd64 amazoncorretto:21
+#FROM --platform=linux/amd64 amazoncorretto:21
+FROM amazoncorretto:21
 
 WORKDIR /app
 

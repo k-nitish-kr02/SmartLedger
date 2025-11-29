@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # Infrastructure Services
   zookeeper:
@@ -56,6 +54,7 @@ services:
       - "3306:3306"
     volumes:
       - mysql-db:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
     networks:
       - smartledger-network
     healthcheck:
@@ -89,7 +88,7 @@ services:
     networks:
       - smartledger-network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9898/auth/v1/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:9898/health"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -208,7 +207,7 @@ services:
     networks:
       - smartledger-network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/status"]
+      test: ["CMD", "kong", "health"]
       interval: 30s
       timeout: 10s
       retries: 3
