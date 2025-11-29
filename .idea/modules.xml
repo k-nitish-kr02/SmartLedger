@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AuthService.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AuthService.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SmartLedger Repo.iml" filepath="$PROJECT_DIR$/.idea/SmartLedger Repo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/service.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/userservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/userservice.main.iml" />
     </modules>
   </component>
 </project>

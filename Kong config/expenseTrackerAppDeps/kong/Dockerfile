@@ -13,10 +13,7 @@ ENV KONG_DATABASE="off" \
     KONG_PROXY_LISTEN="0.0.0.0:8000, 0.0.0.0:8443 ssl" \
     KONG_LOG_LEVEL="debug" \
     KONG_PLUGINS="bundled,custom-auth" \
-    KONG_LUA_PACKAGE_PATH="/usr/local/share/lua/5.1/?.lgit add .
-git commit -m "Docker Compose full fix + env config corrected + stable services"
-git push
-ua;;" \
+    KONG_LUA_PACKAGE_PATH="/usr/local/share/lua/5.1/?.lua;;" \
     KONG_DECLARATIVE_CONFIG_STRING="{}" \
     KONG_NGINX_WORKER_PROCESSES="1" \
     KONG_NGINX_USER="kong kong" \
