@@ -14,6 +14,8 @@ const CustomBox = ({style = {}, children, ...props}) => {
   );
 };
 
+
+
 export default CustomBox;
 
 const styles = StyleSheet.create({
